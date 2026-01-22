@@ -28,6 +28,15 @@ function draw(){
 
     for(let i=0; i < cols; i++){
         for(let j=0; j < rows; j++){
+            if(mouseIsPressed){
+                letters[i][j].scl = 1;
+            } else {
+                if(letters[i][j].scl > 0.3){
+                    letters[i][j].scl -= 0.001;
+                } else {
+                    letters[i][j].scl = 0.3;
+                }
+            }
             letters[i][j].display();
             noFill();
             //rect(i*size, j*size, size, size); //cuadrícula
