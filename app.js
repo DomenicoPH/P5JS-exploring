@@ -1,21 +1,18 @@
-const REPO_NAME = "P5JS-exploring";
-const BASE_PATH = `${REPO_NAME}`;
-
 const listArray = [
     {
         id: 1,
         label: "Experimento 01",
-        link: `${BASE_PATH}/face-cam-test01/index.html`
+        link: "face-cam-test01/index.html"
     },
     {
         id: 2,
         label: "Experimento 02",
-        link: `${BASE_PATH}/letter-anim-test01/index.html`
+        link: "letter-anim-test01/index.html"
     },
     {
         id: 3,
         label: "Experimento 03",
-        link: `${BASE_PATH}/letter-anim-test02/index.html`
+        link: "letter-anim-test02/index.html"
     },
 ]
 
