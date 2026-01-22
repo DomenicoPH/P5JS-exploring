@@ -21,6 +21,8 @@ function setup(){
 
 function draw(){
     background(0);
+    center.x = mouseX;
+    center.y = mouseY;
     fill(255);
     ellipse(center.x, center.y, 10, 10);
 
