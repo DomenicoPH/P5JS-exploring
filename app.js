@@ -14,6 +14,11 @@ const listArray = [
         label: "Experimento 03",
         link: "letter-anim-test02/index.html"
     },
+    {
+        id: 4,
+        label: "ASCII Webcam",
+        link: "project001-asciiart-01/index.html"
+    }
 ]
 
 const list = document.querySelector(".list");
