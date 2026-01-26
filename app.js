@@ -2,22 +2,22 @@ const listArray = [
     {
         id: 1,
         label: "Experimento 01",
-        link: "face-cam-test01/index.html"
+        link: "experiments/face-cam-test01/index.html"
     },
     {
         id: 2,
         label: "Experimento 02",
-        link: "letter-anim-test01/index.html"
+        link: "experiments/letter-anim-test01/index.html"
     },
     {
         id: 3,
         label: "Experimento 03",
-        link: "letter-anim-test02/index.html"
+        link: "experiments/letter-anim-test02/index.html"
     },
     {
         id: 4,
         label: "ASCII Webcam",
-        link: "project001-asciiart-01/index.html"
+        link: "experiments/project001-asciiart-01/index.html"
     }
 ]
 
