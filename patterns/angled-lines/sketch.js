@@ -10,7 +10,7 @@ function setup(){
   saveButton.position(10, height + 15);
   saveButton.mousePressed(saveArt);
   
-  background(185);
+  background(200);
 
   for(x = 0; x < width; x += size + 0){
     for(y = 0; y < height; y += size + 0){
