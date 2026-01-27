@@ -2,9 +2,9 @@ let rez = 0.02;
 let t = 0;
 
 function setup() {
-  createCanvas(windowWidth - 20, windowHeight - 70);
+  createCanvas(600,600);
   let saveButton = createButton("save jpg");
-  saveButton.position(10, height + 15);
+  saveButton.position(0,0);
   saveButton.mousePressed(saveArt);
   noLoop();
 }

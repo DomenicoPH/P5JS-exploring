@@ -1,4 +1,4 @@
-const listArray = [
+const expArray = [
     {
         id: 1,
         label: "Experimento 01",
@@ -19,28 +19,78 @@ const listArray = [
         label: "ASCII Webcam",
         link: "experiments/project001-asciiart-01/index.html"
     }
-]
+];
 
-const list = document.querySelector(".list");
+const patternsArray = [
+    {
+        id: 1,
+        label: "Angled Lines I",
+        link: "patterns/angled-lines/index.html"
+    },
+    {
+        id: 2,
+        label: "Angled Lines II",
+        link: "patterns/angled-lines-2/index.html"
+    },
+    {
+        id: 3,
+        label: "Colored Sq.",
+        link: "patterns/colored-squares/index.html"
+    },
+    {
+        id: 4,
+        label: "Random Color T.",
+        link: "patterns/random-color-triangles/index.html"
+    },
+    {
+        id: 5,
+        label: "Sq. Pattern",
+        link: "patterns/simple-square-pattern/index.html"
+    },
+    {
+        id: 6,
+        label: "Sq. Grid",
+        link: "patterns/squares-grid/index.html"
+    },
+];
 
-if(list){
-    list.innerHTML = '';
 
-    listArray.forEach(item => {
+const expList = document.querySelector(".experiments");
+if(expList){
+    expList.innerHTML = '';
+
+    expArray.forEach(item => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         link.href = item.link;
         link.textContent = item.label;
         listItem.appendChild(link);
-        list.appendChild(listItem);
+        expList.appendChild(listItem);
     })
 } else {
-    console.error('No se encontró el elemento con clase "list"');
+    console.error('No se encontró el elemento con clase "experiments"');
 };
 
+const patList = document.querySelector(".patterns");
+if(patList){
+    patList.innerHTML = '';
+
+    patternsArray.forEach(item => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = item.link;
+        link.textContent = item.label;
+        listItem.appendChild(link);
+        patList.appendChild(listItem);
+    })
+} else {
+    console.error('No se encontró el elemento con clase "patterns"');
+};
+
+// ---------------------------------------------------------------------------------- //
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector('.header p');
     if(header){
-        header.textContent = `Experimentos con p5.js y ml5.js - ${listArray.length} proyectos`;
+        header.textContent = `Experimentos con p5.js y ml5.js - ${expArray.length} proyectos`;
     }
 });
