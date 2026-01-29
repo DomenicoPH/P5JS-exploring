@@ -2,7 +2,7 @@ let rez = 0.02;
 let t = 0;
 
 function setup() {
-  createCanvas(windowWidth - 20, windowHeight - 70);
+  createCanvas(windowWidth, windowHeight);
   let saveButton = createButton("save jpg");
   saveButton.position(10, height + 15);
   saveButton.mousePressed(saveArt);
@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(255,0);
   space = 20;
   size = 20;
 
@@ -33,5 +33,5 @@ function draw() {
 }
 
 function saveArt() {
-  save("canvas.jpg");
+  save("canvas.png");
 }
