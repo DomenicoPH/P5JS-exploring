@@ -2,8 +2,8 @@ let rez = 0.02;
 let t = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  let saveButton = createButton("save jpg");
+  createCanvas(windowWidth, windowHeight*2);
+  let saveButton = createButton("save png");
   saveButton.position(10, height + 15);
   saveButton.mousePressed(saveArt);
   noLoop();
